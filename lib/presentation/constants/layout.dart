@@ -1,6 +1,6 @@
 /// Layout constants
-class KLayout {
-  KLayout._(); // Private constructor to prevent instantiation
+class Layout {
+  Layout._(); // Private constructor to prevent instantiation
 
   // Breakpoints
 

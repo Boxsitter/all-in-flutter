@@ -1,7 +1,7 @@
 /// Sizing constants
 /// All dimensions are in logical pixels.
-class KSizes {
-  KSizes._(); // Private constructor to prevent instantiation
+class Sizes {
+  Sizes._(); // Private constructor to prevent instantiation
 
   /// Thin divider width
   static const double thinDivider = 1.0;

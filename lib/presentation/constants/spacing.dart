@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 ///
 /// Based on 8dp grid system for consistent spatial relationships.
 /// All dimensions are in logical pixels.
-class KSpacing {
-  KSpacing._(); // Private constructor to prevent instantiation
+class Spacing {
+  Spacing._(); // Private constructor to prevent instantiation
 
   // Base spacing scale (8dp grid)
 
