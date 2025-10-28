@@ -1,0 +1,239 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "build/**"
+    - ".dart_tool/**"
+  
+  language:
+    strict-inference: true
+    strict-raw-types: true
+
+linter:
+  rules:
+    # Require explicit type annotations
+    always_specify_types: true
+    
+    # Make parameters immutable by default
+    prefer_final_parameters: true
+    
+    # Use package: imports consistently
+    always_use_package_imports: true
+    
+    # Method and override annotations
+    
+    # Mark @override on inherited methods
+    annotate_overrides: true
+    
+    # Control flow and structure
+    
+    # Disallow empty else blocks
+    avoid_empty_else: true
+    
+    # Require braces in if/for/while
+    curly_braces_in_flow_control_structures: true
+    
+    # Disallow empty catch blocks
+    empty_catches: true
+    
+    # Use ; instead of {} for empty constructors
+    empty_constructor_bodies: true
+    
+    # Disallow empty statements
+    empty_statements: true
+    
+    # Variable initialization and null safety
+    
+    # Don't explicitly initialize to null
+    avoid_init_to_null: true
+    
+    # Make fields final when possible
+    prefer_final_fields: true
+    
+    # Make local variables final when possible
+    prefer_final_locals: true
+    
+    # Use const constructors when possible
+    prefer_const_constructors: true
+    
+    # Require const in immutable classes
+    prefer_const_constructors_in_immutables: true
+    
+    # Use const for compile-time constants
+    prefer_const_declarations: true
+    
+    # Use const for immutable literals
+    prefer_const_literals_to_create_immutables: true
+    
+    # Import and library organization
+    
+    # Avoid importing implementation files
+    implementation_imports: true
+    
+    # Use proper library naming
+    library_names: true
+    
+    # Use proper import prefixes
+    library_prefixes: true
+    
+    # Use proper package naming
+    package_names: true
+    
+    # Async and Future handling
+    
+    # Avoid blocking async operations
+    avoid_slow_async_io: true
+    
+    # Only await Future objects
+    await_only_futures: true
+    
+    # Handle or explicitly ignore Futures
+    unawaited_futures: true
+    
+    # Check BuildContext usage in async
+    use_build_context_synchronously: true
+    
+    # Debugging and development
+    
+    # Use logging instead of print()
+    avoid_print: true
+    
+    # Avoid dart:html in Flutter
+    avoid_web_libraries_in_flutter: true
+    
+    # Naming conventions
+    
+    # Use camelCase for extensions
+    camel_case_extensions: true
+    
+    # Use CamelCase for types
+    camel_case_types: true
+    
+    # Use snake_case for file names
+    file_names: true
+    
+    # Use camelCase for variables/methods
+    non_constant_identifier_names: true
+    
+    # Don't use type names as parameters
+    avoid_types_as_parameter_names: true
+    
+    # Code quality and best practices
+    
+    # Override both hashCode and ==
+    hash_and_equals: true
+    
+    # Avoid duplicate switch cases
+    no_duplicate_case_values: true
+    
+    # Don't pass null where closure expected
+    null_closures: true
+    
+    # Avoid infinite recursion in getters
+    recursive_getters: true
+    
+    # Use typed initializing formals
+    type_init_formals: true
+    
+    # Avoid comparing unrelated types
+    unrelated_type_equality_checks: true
+    
+    # Collection and iteration preferences
+    
+    # Use [] and {} instead of constructors
+    prefer_collection_literals: true
+    
+    # Use .contains() instead of indexOf
+    prefer_contains: true
+    
+    # Use .isEmpty instead of .length == 0
+    prefer_is_empty: true
+    
+    # Use .isNotEmpty instead of .length != 0
+    prefer_is_not_empty: true
+    
+    # Use spread operator in collections
+    prefer_spread_collections: true
+    
+    # String and interpolation
+    
+    # Use single quotes for strings
+    prefer_single_quotes: true
+    
+    # Use $var instead of concatenation
+    prefer_interpolation_to_compose_strings: true
+    
+    # Conditional and null-aware operators
+    
+    # Use ??= when possible
+    prefer_conditional_assignment: true
+    
+    # Use ?? and ??= operators
+    prefer_if_null_operators: true
+    
+    # Use this.field in constructors
+    prefer_initializing_formals: true
+    
+    # Code organization
+    
+    # Use /// for documentation
+    slash_for_doc_comments: true
+    
+    # Put constructors before methods
+    sort_constructors_first: true
+    
+    # Put unnamed constructor first
+    sort_unnamed_constructors_first: true
+    
+    # Cleanup unnecessary code
+    
+    # Don't await in return statements
+    unnecessary_await_in_return: true
+    
+    # Remove unnecessary ${} braces
+    unnecessary_brace_in_string_interps: true
+    
+    # Remove redundant const keywords
+    unnecessary_const: true
+    
+    # Remove unnecessary new keywords
+    unnecessary_new: true
+    
+    # Simplify ?? null expressions
+    unnecessary_null_in_if_null_operators: true
+    
+    # Remove empty override methods
+    unnecessary_overrides: true
+    
+    # Remove unnecessary parentheses
+    unnecessary_parenthesis: true
+    
+    # Remove unnecessary this references
+    unnecessary_this: true
+    
+    # Flutter-specific rules
+    
+    # Use 8-digit hex for colors
+    use_full_hex_values_for_flutter_colors: true
+    
+    # Use Function() syntax
+    use_function_type_syntax_for_parameters: true
+    
+    # Include Key parameter in widgets
+    use_key_in_widget_constructors: true
+    
+    # Use rethrow instead of throw e
+    use_rethrow_when_possible: true
+    
+    # Use super parameters in constructors
+    use_super_parameters: true
+    
+    # Regular expressions
+    
+    # Validate regular expression syntax
+    valid_regexps: true
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options

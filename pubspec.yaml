@@ -1,0 +1,50 @@
+name: all_in
+description: "CSCI 436/536 Technology for Social Good project. A web app to raise awareness for gambling addiction."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Linting
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  
+  fonts:
+    - family: Inter
+      fonts:
+        # Regular
+        - asset: assets/fonts/inter/inter_18pt_regular.ttf
+          weight: 400
+        - asset: assets/fonts/inter/inter_18pt_italic.ttf
+          weight: 400
+          style: italic
+        
+        # Medium
+        - asset: assets/fonts/inter/inter_18pt_medium.ttf
+          weight: 500
+        - asset: assets/fonts/inter/inter_18pt_mediumitalic.ttf
+          weight: 500
+          style: italic
+        
+        # Bold
+        - asset: assets/fonts/inter/inter_18pt_bold.ttf
+          weight: 700
+        - asset: assets/fonts/inter/inter_18pt_bolditalic.ttf
+          weight: 700
+          style: italic

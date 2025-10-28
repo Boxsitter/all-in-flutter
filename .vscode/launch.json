@@ -1,0 +1,42 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter Web (Debug)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "chrome",
+      "args": [
+        "--debug",
+        "--web-port=3000"
+      ],
+      "env": {
+        "FLUTTER_WEB_AUTO_DETECT": "true"
+      },
+      "console": "debugConsole"
+    },
+    {
+      "name": "Flutter Web (Release)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "chrome",
+      "flutterMode": "release",
+      "args": [
+        "--release",
+        "--web-port=3000"
+      ],
+      "env": {
+        "FLUTTER_WEB_AUTO_DETECT": "true"
+      },
+      "console": "debugConsole"
+    }
+  ],
+  "compounds": [],
+  "defaults": {
+    "launch": {
+      "program": "lib/main.dart"
+    }
+  }
+}
