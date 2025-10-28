@@ -8,4 +8,10 @@ class Sizes {
 
   /// Standard divider width
   static const double standardDivider = 2.0;
+
+  /// Header/AppBar height
+  static const double headerHeight = 64.0;
+
+  /// Bottom bar height
+  static const double footerHeight = 56.0;
 }

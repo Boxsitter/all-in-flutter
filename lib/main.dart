@@ -1,4 +1,6 @@
 import 'package:all_in/presentation/theme.dart';
+import 'package:all_in/presentation/widgets/layout/app_layout.dart';
+import 'package:all_in/presentation/screens/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -17,11 +19,8 @@ class AllInApp extends ConsumerWidget {
       title: 'All In',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light,
-      home: Center(
-        child: Text(
-          'All In App Home',
-          style: Theme.of(context).textTheme.headlineMedium,
-        ),
+      home: const AppLayout(
+        content: HomePage(),
       ),
     );
   }
