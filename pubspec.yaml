@@ -48,3 +48,26 @@ flutter:
         - asset: assets/fonts/inter/inter_18pt_bolditalic.ttf
           weight: 700
           style: italic
+    
+    - family: Playfair Display
+      fonts:
+        # Regular
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-Italic.ttf
+          weight: 400
+          style: italic
+        
+        # Medium
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-MediumItalic.ttf
+          weight: 500
+          style: italic
+        
+        # Bold
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-BoldItalic.ttf
+          weight: 700
+          style: italic

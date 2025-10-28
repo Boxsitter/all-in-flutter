@@ -2,17 +2,22 @@ import 'package:flutter/material.dart';
 
 /// Typography constants.
 ///
-/// Uses bundled Inter font with three weights: Regular (400), Medium (500), Bold (700).
-/// Font sizes based on Material Design 3, simplified line heights for clarity.
+/// Uses two font families:
+/// - Playfair Display: Display text, headlines, and titles (decorative serif)
+/// - Inter: Body text, labels, and UI elements (clean sans-serif)
 ///
+/// Font sizes based on Material Design 3, simplified line heights for clarity.
 /// Text colors are not included - apply them via copyWith() or Theme.of(context).textTheme.
-class KTypography {
-  KTypography._(); // Private constructor to prevent instantiation
+class Typography {
+  Typography._(); // Private constructor to prevent instantiation
 
-  // Font family
+  // Font families
 
-  /// Inter font family name
-  static const String fontFamily = 'Inter';
+  /// Playfair Display font family - For display text and headings
+  static const String displayFontFamily = 'Playfair Display';
+
+  /// Inter font family - For body text and UI elements
+  static const String bodyFontFamily = 'Inter';
 
   // Font weights
 
@@ -40,7 +45,7 @@ class KTypography {
 
   /// Display Large - For hero text and main headlines
   static const TextStyle displayLargeStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: displayFontFamily,
     fontSize: 57.0,
     fontWeight: regular,
     height: tightHeight,
@@ -48,7 +53,7 @@ class KTypography {
 
   /// Display Medium - For prominent headlines
   static const TextStyle displayMediumStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: displayFontFamily,
     fontSize: 45.0,
     fontWeight: regular,
     height: tightHeight,
@@ -56,7 +61,7 @@ class KTypography {
 
   /// Display Small - For section headers
   static const TextStyle displaySmallStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: displayFontFamily,
     fontSize: 36.0,
     fontWeight: regular,
     height: tightHeight,
@@ -66,7 +71,7 @@ class KTypography {
 
   /// Headline Large - For page titles
   static const TextStyle headlineLargeStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: displayFontFamily,
     fontSize: 32.0,
     fontWeight: regular,
     height: normalHeight,
@@ -74,7 +79,7 @@ class KTypography {
 
   /// Headline Medium - For card titles
   static const TextStyle headlineMediumStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: displayFontFamily,
     fontSize: 28.0,
     fontWeight: regular,
     height: normalHeight,
@@ -82,7 +87,7 @@ class KTypography {
 
   /// Headline Small - For component headers
   static const TextStyle headlineSmallStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: displayFontFamily,
     fontSize: 24.0,
     fontWeight: regular,
     height: normalHeight,
@@ -92,7 +97,7 @@ class KTypography {
 
   /// Title Large - For dialog titles and emphasized content
   static const TextStyle titleLargeStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: displayFontFamily,
     fontSize: 22.0,
     fontWeight: medium,
     height: normalHeight,
@@ -100,7 +105,7 @@ class KTypography {
 
   /// Title Medium - For list item titles
   static const TextStyle titleMediumStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: displayFontFamily,
     fontSize: 16.0,
     fontWeight: medium,
     height: normalHeight,
@@ -108,7 +113,7 @@ class KTypography {
 
   /// Title Small - For small component titles
   static const TextStyle titleSmallStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: displayFontFamily,
     fontSize: 14.0,
     fontWeight: medium,
     height: normalHeight,
@@ -118,7 +123,7 @@ class KTypography {
 
   /// Body Large - For primary body text and paragraphs
   static const TextStyle bodyLargeStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: bodyFontFamily,
     fontSize: 16.0,
     fontWeight: regular,
     height: relaxedHeight,
@@ -126,7 +131,7 @@ class KTypography {
 
   /// Body Medium - For secondary body text
   static const TextStyle bodyMediumStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: bodyFontFamily,
     fontSize: 14.0,
     fontWeight: regular,
     height: relaxedHeight,
@@ -134,7 +139,7 @@ class KTypography {
 
   /// Body Small - For supporting text and descriptions
   static const TextStyle bodySmallStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: bodyFontFamily,
     fontSize: 12.0,
     fontWeight: regular,
     height: relaxedHeight,
@@ -144,7 +149,7 @@ class KTypography {
 
   /// Label Large - For prominent buttons and CTAs
   static const TextStyle labelLargeStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: bodyFontFamily,
     fontSize: 14.0,
     fontWeight: medium,
     height: normalHeight,
@@ -152,7 +157,7 @@ class KTypography {
 
   /// Label Medium - For standard buttons and tabs
   static const TextStyle labelMediumStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: bodyFontFamily,
     fontSize: 12.0,
     fontWeight: medium,
     height: normalHeight,
@@ -160,7 +165,7 @@ class KTypography {
 
   /// Label Small - For small buttons and chips
   static const TextStyle labelSmallStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: bodyFontFamily,
     fontSize: 11.0,
     fontWeight: medium,
     height: normalHeight,
@@ -170,7 +175,7 @@ class KTypography {
 
   /// Caption - For image captions and fine print
   static const TextStyle captionStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: bodyFontFamily,
     fontSize: 12.0,
     fontWeight: regular,
     height: normalHeight,
@@ -178,7 +183,7 @@ class KTypography {
 
   /// Overline - For category labels and timestamps (uppercase recommended)
   static const TextStyle overlineStyle = TextStyle(
-    fontFamily: fontFamily,
+    fontFamily: bodyFontFamily,
     fontSize: 11.0,
     fontWeight: medium,
     height: normalHeight,
