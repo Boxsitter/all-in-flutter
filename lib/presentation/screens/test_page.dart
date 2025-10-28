@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 /// Example home page demonstrating the responsive content system.
 ///
 /// Shows how to extend [ResponsiveContent] and provide desktop and mobile layouts.
-class HomePage extends ResponsiveContent {
-  const HomePage({super.key});
+class TestPage extends ResponsiveContent {
+  const TestPage({super.key});
 
   @override
   Widget buildDesktop(final BuildContext context) {

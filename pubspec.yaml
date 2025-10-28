@@ -71,3 +71,10 @@ flutter:
         - asset: assets/fonts/playfair_display/PlayfairDisplay-BoldItalic.ttf
           weight: 700
           style: italic
+        
+        # ExtraBold
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic

@@ -8,8 +8,8 @@ import 'package:flutter/material.dart';
 ///
 /// Font sizes based on Material Design 3, simplified line heights for clarity.
 /// Text colors are not included - apply them via copyWith() or Theme.of(context).textTheme.
-class Typography {
-  Typography._(); // Private constructor to prevent instantiation
+class TextStyles {
+  TextStyles._(); // Private constructor to prevent instantiation
 
   // Font families
 
@@ -30,6 +30,9 @@ class Typography {
   /// Bold weight - For strong emphasis
   static const FontWeight bold = FontWeight.w700;
 
+  /// ExtraBold weight - For very strong emphasis
+  static const FontWeight extraBold = FontWeight.w800;
+
   // Line heights
 
   /// Tight line height - For large display text
@@ -46,23 +49,23 @@ class Typography {
   /// Display Large - For hero text and main headlines
   static const TextStyle displayLargeStyle = TextStyle(
     fontFamily: displayFontFamily,
-    fontSize: 57.0,
-    fontWeight: regular,
+    fontSize: 200.0,
+    fontWeight: extraBold,
     height: tightHeight,
   );
 
   /// Display Medium - For prominent headlines
   static const TextStyle displayMediumStyle = TextStyle(
     fontFamily: displayFontFamily,
-    fontSize: 45.0,
-    fontWeight: regular,
+    fontSize: 52.0,
+    fontWeight: extraBold,
     height: tightHeight,
   );
 
   /// Display Small - For section headers
   static const TextStyle displaySmallStyle = TextStyle(
     fontFamily: displayFontFamily,
-    fontSize: 36.0,
+    fontSize: 48.0,
     fontWeight: regular,
     height: tightHeight,
   );
@@ -89,7 +92,7 @@ class Typography {
   static const TextStyle headlineSmallStyle = TextStyle(
     fontFamily: displayFontFamily,
     fontSize: 24.0,
-    fontWeight: regular,
+    fontWeight: bold,
     height: normalHeight,
   );
 
@@ -124,8 +127,8 @@ class Typography {
   /// Body Large - For primary body text and paragraphs
   static const TextStyle bodyLargeStyle = TextStyle(
     fontFamily: bodyFontFamily,
-    fontSize: 16.0,
-    fontWeight: regular,
+    fontSize: 18.0,
+    fontWeight: bold,
     height: relaxedHeight,
   );
 

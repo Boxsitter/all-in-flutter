@@ -1,3 +1,5 @@
+import 'package:all_in/presentation/constants/text_styles.dart';
+import 'package:all_in/presentation/widgets/app_title.dart';
 import 'package:flutter/material.dart';
 import 'package:all_in/presentation/constants/sizes.dart';
 import 'package:all_in/presentation/constants/spacing.dart';
@@ -8,12 +10,8 @@ import 'package:all_in/presentation/constants/spacing.dart';
 /// Implements PreferredSizeWidget to work with Scaffold's appBar parameter.
 class Header extends StatelessWidget implements PreferredSizeWidget {
   const Header({
-    this.title = 'All In',
     super.key,
   });
-
-  /// The title text to display in the header
-  final String title;
 
   @override
   Size get preferredSize => const Size.fromHeight(Sizes.headerHeight);
@@ -35,15 +33,17 @@ class Header extends StatelessWidget implements PreferredSizeWidget {
         ),
       ),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
+          const AppTitle(style: TextStyles.displayMediumStyle),
+          const Spacer(),
           Text(
-            title,
-            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+            'Experience',
+            style: TextStyles.bodyLargeStyle.copyWith(
               color: colorScheme.primary,
+              height: 1.0,
             ),
           ),
-          const Spacer(),
-          // Add navigation items, user menu, etc. here
         ],
       ),
     );
